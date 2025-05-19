@@ -40,12 +40,12 @@ let dog = {
 // never가 모든 타입의 서브타입이므로 A가 B의 슈퍼타입 조건을 만족하여 단언 가능
 let num1 = 10 as never;
 // unknown이 모든 타입의 슈퍼타입이므로 A가 B의 서브타입 조건을 만족하여 단언 가능
-let num1 = 10 as unknown;
+let num2 = 10 as unknown;
 
 // 단언 불가능
 // let num3 = 10 as string;
 // 다중단언으로 단언을 가능하게 할 수 있음(추천하지 않음.)
-let num4 = 10 as unknown as string;
+let num3 = 10 as unknown as string;
 
 
 // const 단언
